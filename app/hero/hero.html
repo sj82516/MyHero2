@@ -1,0 +1,14 @@
+<div class="title">
+    <h1>Hero</h1>
+</div>
+<div class="body">
+    <div class="hero-list">
+        <h2>Hero list</h2>
+        <ul>
+            <li *ngFor="let h of heros">
+                <span (click)="navToHeroDetail(h.id)"> Name: {{h.name}} , Age: {{h.age}}</span>
+            </li>
+        </ul>
+    </div>
+    <my-hero-form></my-hero-form>
+</div>
